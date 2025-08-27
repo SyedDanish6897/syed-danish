@@ -84,13 +84,15 @@ const Hero = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-gradient-primary hover:shadow-glow transition-bounce hover:scale-105"
+            <a
+              href="https://drive.google.com/file/d/1JRhZmmOOCWpqR9x3hgB1HQ1nUf8BUUlz/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-gradient-primary hover:shadow-glow transition-bounce hover:scale-105 rounded-lg cursor-pointer"
             >
               <Download className="mr-2 h-4 w-4" />
               Download CV
-            </Button>
+            </a>
             
             <Button 
               variant="outline" 
