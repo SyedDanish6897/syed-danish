@@ -33,7 +33,7 @@ const Contact = () => {
       icon: MapPin,
       title: 'Location',
       value: 'Aurangabad, India 🇮🇳',
-      href: '#'
+      href: 'https://maps.app.goo.gl/7o9J1gu9Xyqxwf4R6'
     }
   ];
 
@@ -41,13 +41,13 @@ const Contact = () => {
     {
       icon: Github,
       title: 'GitHub',
-      url: 'https://github.com/syeddanish',
+      url: 'https://github.com/SyedDanish6897?tab=repositories',
       color: 'hover:text-gray-400'
     },
     {
       icon: Linkedin,
       title: 'LinkedIn',
-      url: 'https://linkedin.com/in/syeddanish',
+      url: 'https://www.linkedin.com/in/syed-danish-9a9298233/',
       color: 'hover:text-blue-500'
     },
     {
@@ -124,7 +124,9 @@ const Contact = () => {
                   <a
                     key={item.title}
                     href={item.href}
-                    className="flex items-center space-x-4 p-4 bg-gradient-card rounded-lg hover-lift transition-smooth group"
+                    target={item.href !== '#' ? '_blank' : undefined}
+                    rel={item.href !== '#' ? 'noopener noreferrer' : undefined}
+                    className="flex items-center space-x-4 p-4 bg-gradient-card rounded-lg hover-lift transition-smooth group cursor-pointer"
                   >
                     <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
                       <item.icon className="h-5 w-5 text-white" />
