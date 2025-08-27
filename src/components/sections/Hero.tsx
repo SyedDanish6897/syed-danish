@@ -49,13 +49,11 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto space-y-8 fade-in visible">
-          {/* Profile Image */}
+          {/* Profile Image Placeholder */}
           <div className="mx-auto w-32 h-32 rounded-full bg-gradient-primary p-1 shadow-glow hover-lift">
-            <img
-              src="https://res.cloudinary.com/dwcyjebla/image/upload/v1756287286/Home_Danish-removebg-preview_1_ltdbfm.png"
-              alt="Syed Danish"
-              className="w-full h-full rounded-full object-cover"
-            />
+            <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-4xl font-bold text-primary">
+              SD
+            </div>
           </div>
 
           {/* Main Heading */}
