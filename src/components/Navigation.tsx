@@ -52,7 +52,7 @@ const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
           {/* Logo */}
           <a
             href="https://syed-danish.lovable.app/"
-            className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent cursor-pointer flex"
+            className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent cursor-pointer flex items-center justify-center min-w-[3rem] h-12"
           >
             SD
           </a>
