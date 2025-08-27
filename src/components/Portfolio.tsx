@@ -11,25 +11,30 @@ const Portfolio = () => {
   const { isDark, toggleTheme } = useTheme();
 
   useEffect(() => {
-    // Initialize animation observers
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
+    // Use requestAnimationFrame to defer DOM queries and avoid forced reflows
+    requestAnimationFrame(() => {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
+      const observer = new IntersectionObserver((entries) => {
+        // Batch DOM updates to prevent layout thrashing
+        requestAnimationFrame(() => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        });
+      }, observerOptions);
 
-    // Observe all animated elements
-    const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
-    animatedElements.forEach((el) => observer.observe(el));
+      // Defer element queries to next frame to avoid forced reflow
+      const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+      animatedElements.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
+      return () => observer.disconnect();
+    });
   }, []);
 
   return (
