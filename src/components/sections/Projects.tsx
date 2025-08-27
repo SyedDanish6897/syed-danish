@@ -14,7 +14,7 @@ const Projects = () => {
       technologies: ['Python', 'Flask', 'HTML/CSS', 'JavaScript', 'API Integration'],
       category: 'Web Development',
       image: '/placeholder.svg',
-      githubUrl: 'https://github.com/SyedDanish6897/News-website',
+      githubUrl: '#',
       liveUrl: '#',
       highlights: ['Real-time news fetching', 'Responsive design', 'Category filtering']
     },
@@ -24,7 +24,7 @@ const Projects = () => {
       technologies: ['Python', 'Flask', 'SQL', 'JavaScript', 'Analytics'],
       category: 'Web Development',
       image: '/placeholder.svg',
-      githubUrl: 'https://github.com/SyedDanish6897/smart-url-shortener',
+      githubUrl: '#',
       liveUrl: '#',
       highlights: ['Click analytics', 'Custom URLs', 'User dashboard']
     },
@@ -34,7 +34,7 @@ const Projects = () => {
       technologies: ['Python', 'API Integration', 'Data Visualization', 'UI/UX'],
       category: 'API Integration',
       image: '/placeholder.svg',
-      githubUrl: 'https://github.com/SyedDanish6897/Live-Weather-app-',
+      githubUrl: '#',
       liveUrl: '#',
       highlights: ['Real-time data', 'Location-based', 'Weather forecasts']
     },
@@ -44,7 +44,7 @@ const Projects = () => {
       technologies: ['Python', 'Machine Learning', 'SQL', 'Data Analysis', 'Scikit-learn'],
       category: 'Data Science',
       image: '/placeholder.svg',
-      githubUrl: 'https://github.com/SyedDanish6897/Customer-Satisfaction-Prediction',
+      githubUrl: '#',
       liveUrl: '#',
       highlights: ['ML algorithms', 'Data analysis', 'Predictive modeling']
     }
@@ -63,7 +63,7 @@ const Projects = () => {
           {/* Section Header */}
           <div className="text-center mb-16 fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Featured <span className="bg-gradient-primary bg-clip-text text-transparent font-bold">Projects</span>
+              Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               A showcase of my recent work including web applications, data science projects, and AI solutions
@@ -151,15 +151,14 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-2">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground h-9 px-3 flex-1 hover:bg-primary/10 cursor-pointer rounded-md"
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex-1 hover:bg-primary/10 transition-smooth"
                     >
                       <Github className="mr-2 h-4 w-4" />
                       Code
-                    </a>
+                    </Button>
                     <Button 
                       size="sm" 
                       className="flex-1 bg-gradient-primary hover:shadow-glow transition-smooth"
@@ -178,15 +177,14 @@ const Projects = () => {
             <p className="text-muted-foreground mb-4">
               Want to see more of my work?
             </p>
-            <a
-              href="https://github.com/SyedDanish6897?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground h-11 px-8 hover-lift border-primary/30 hover:bg-primary/10 rounded-lg cursor-pointer"
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="hover-lift border-primary/30 hover:bg-primary/10"
             >
               <Github className="mr-2 h-5 w-5" />
               View All Projects on GitHub
-            </a>
+            </Button>
           </div>
         </div>
       </div>

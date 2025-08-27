@@ -20,20 +20,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'syeddanish6897@gmail.com',
-      href: 'mailto:syeddanish6897@gmail.com'
+      value: 'syeddanish@example.com',
+      href: 'mailto:syeddanish@example.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+91 8668740849',
-      href: 'tel:+918668740849'
+      value: '+1 (555) 123-4567',
+      href: 'tel:+15551234567'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Aurangabad, India 🇮🇳',
-      href: 'https://maps.app.goo.gl/7o9J1gu9Xyqxwf4R6'
+      value: 'City, Country',
+      href: '#'
     }
   ];
 
@@ -41,19 +41,19 @@ const Contact = () => {
     {
       icon: Github,
       title: 'GitHub',
-      url: 'https://github.com/SyedDanish6897?tab=repositories',
+      url: 'https://github.com/syeddanish',
       color: 'hover:text-gray-400'
     },
     {
       icon: Linkedin,
       title: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/syed-danish-9a9298233/',
+      url: 'https://linkedin.com/in/syeddanish',
       color: 'hover:text-blue-500'
     },
     {
       icon: Mail,
       title: 'Email',
-      url: 'mailto:syeddanish6897@gmail.com',
+      url: 'mailto:syeddanish@example.com',
       color: 'hover:text-red-500'
     }
   ];
@@ -97,7 +97,7 @@ const Contact = () => {
           {/* Section Header */}
           <div className="text-center mb-16 fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Get In <span className="bg-gradient-primary bg-clip-text text-transparent font-bold">Touch</span>
+              Get In <span className="bg-gradient-primary bg-clip-text text-transparent">Touch</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Ready to start a conversation? I'd love to hear from you. Send me a message 
@@ -124,9 +124,7 @@ const Contact = () => {
                   <a
                     key={item.title}
                     href={item.href}
-                    target={item.href !== '#' ? '_blank' : undefined}
-                    rel={item.href !== '#' ? 'noopener noreferrer' : undefined}
-                    className="flex items-center space-x-4 p-4 bg-gradient-card rounded-lg hover-lift transition-smooth group cursor-pointer"
+                    className="flex items-center space-x-4 p-4 bg-gradient-card rounded-lg hover-lift transition-smooth group"
                   >
                     <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
                       <item.icon className="h-5 w-5 text-white" />
@@ -151,10 +149,7 @@ const Contact = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                     
                       className={`w-10 h-10 bg-gradient-card rounded-full flex items-center justify-center hover-lift transition-smooth ${social.color}`}
-                      aria-label={social.title === 'Email' ? 'Send me an email' : `Visit my ${social.title} profile`}
-                     
                     >
                       <social.icon className="h-5 w-5" />
                     </a>
