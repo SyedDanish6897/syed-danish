@@ -106,32 +106,36 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Social Links */}
-          <div className="flex justify-center space-x-6 pt-8">
-            <a
-              href="https://github.com/SyedDanish6897?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
-            >
-              <Github className="h-5 w-5" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/syed-danish-9a9298233/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
-            >
-              <Linkedin className="h-5 w-5" />
-            </a>
-            <a
-              href="mailto:syeddanish6897@gmail.com"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
-            >
-              <Mail className="h-5 w-5" />
-            </a>
-          </div>
-        </div>
+       {/* Social Links */}
+<div className="flex justify-center space-x-6 pt-8">
+  <a
+    href="https://github.com/SyedDanish6897?tab=repositories"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
+    aria-label="Visit my GitHub profile"
+  >
+    <Github className="h-5 w-5" />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/syed-danish-9a9298233/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
+    aria-label="Visit my LinkedIn profile"
+  >
+    <Linkedin className="h-5 w-5" />
+  </a>
+
+  <a
+    href="mailto:syeddanish6897@gmail.com"
+    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
+    aria-label="Send me an email"
+  >
+    <Mail className="h-5 w-5" />
+  </a>
+</div>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -140,6 +144,7 @@ const Hero = () => {
             size="icon"
             onClick={scrollToAbout}
             className="rounded-full"
+            aria-label="Scroll down to about section"
           >
             <ChevronDown className="h-6 w-6" />
           </Button>
