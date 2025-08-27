@@ -14,7 +14,7 @@ const Projects = () => {
       technologies: ['Python', 'Flask', 'HTML/CSS', 'JavaScript', 'API Integration'],
       category: 'Web Development',
       image: '/placeholder.svg',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/SyedDanish6897/News-website',
       liveUrl: '#',
       highlights: ['Real-time news fetching', 'Responsive design', 'Category filtering']
     },
@@ -24,7 +24,7 @@ const Projects = () => {
       technologies: ['Python', 'Flask', 'SQL', 'JavaScript', 'Analytics'],
       category: 'Web Development',
       image: '/placeholder.svg',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/SyedDanish6897/smart-url-shortener',
       liveUrl: '#',
       highlights: ['Click analytics', 'Custom URLs', 'User dashboard']
     },
@@ -34,7 +34,7 @@ const Projects = () => {
       technologies: ['Python', 'API Integration', 'Data Visualization', 'UI/UX'],
       category: 'API Integration',
       image: '/placeholder.svg',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/SyedDanish6897/Live-Weather-app-',
       liveUrl: '#',
       highlights: ['Real-time data', 'Location-based', 'Weather forecasts']
     },
@@ -44,7 +44,7 @@ const Projects = () => {
       technologies: ['Python', 'Machine Learning', 'SQL', 'Data Analysis', 'Scikit-learn'],
       category: 'Data Science',
       image: '/placeholder.svg',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/SyedDanish6897/Customer-Satisfaction-Prediction',
       liveUrl: '#',
       highlights: ['ML algorithms', 'Data analysis', 'Predictive modeling']
     }
@@ -151,14 +151,15 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-2">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="flex-1 hover:bg-primary/10 transition-smooth"
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground h-9 px-3 flex-1 hover:bg-primary/10 cursor-pointer rounded-md"
                     >
                       <Github className="mr-2 h-4 w-4" />
                       Code
-                    </Button>
+                    </a>
                     <Button 
                       size="sm" 
                       className="flex-1 bg-gradient-primary hover:shadow-glow transition-smooth"
