@@ -50,9 +50,12 @@ const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <a
+            href="https://syed-danish.lovable.app/"
+            className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent cursor-pointer flex"
+          >
             SD
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
