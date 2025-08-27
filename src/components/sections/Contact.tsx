@@ -20,19 +20,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'syeddanish@example.com',
-      href: 'mailto:syeddanish@example.com'
+      value: 'syeddanish6897@gmail.com',
+      href: 'mailto:syeddanish6897@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+91 8668740849',
+      href: 'tel:+918668740849'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'City, Country',
+      value: 'Aurangabad, India 🇮🇳',
       href: '#'
     }
   ];
@@ -53,7 +53,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      url: 'mailto:syeddanish@example.com',
+      url: 'mailto:syeddanish6897@gmail.com',
       color: 'hover:text-red-500'
     }
   ];
