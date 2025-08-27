@@ -60,7 +60,7 @@ const Skills = () => {
           {/* Section Header */}
           <div className="text-center mb-16 fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Skills & <span className="bg-gradient-primary bg-clip-text text-transparent">Expertise</span>
+              Skills & <span className="bg-gradient-primary bg-clip-text text-transparent font-bold">Expertise</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               A comprehensive overview of my technical skills and areas of expertise

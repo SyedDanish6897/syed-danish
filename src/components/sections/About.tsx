@@ -32,7 +32,7 @@ const About = () => {
           {/* Section Header */}
           <div className="text-center mb-16 fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
+              About <span className="bg-gradient-primary bg-clip-text text-transparent font-bold">Me</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Passionate developer and data enthusiast with a keen interest in creating 

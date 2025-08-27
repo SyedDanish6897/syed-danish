@@ -63,7 +63,7 @@ const Projects = () => {
           {/* Section Header */}
           <div className="text-center mb-16 fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
+              Featured <span className="bg-gradient-primary bg-clip-text text-transparent font-bold">Projects</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               A showcase of my recent work including web applications, data science projects, and AI solutions
