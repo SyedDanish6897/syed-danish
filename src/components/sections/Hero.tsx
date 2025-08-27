@@ -60,7 +60,7 @@ const Hero = () => {
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
               Hi, I'm{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-primary bg-clip-text text-transparent font-bold">
                 Syed Danish
               </span>
             </h1>
@@ -108,7 +108,6 @@ const Hero = () => {
               variant="ghost"
               size="icon"
               className="hover-lift hover:text-primary transition-bounce"
-              aria-label="Visit my GitHub profile"
             >
               <Github className="h-5 w-5" />
             </Button>
@@ -116,7 +115,6 @@ const Hero = () => {
               variant="ghost"
               size="icon"
               className="hover-lift hover:text-primary transition-bounce"
-              aria-label="Visit my LinkedIn profile"
             >
               <Linkedin className="h-5 w-5" />
             </Button>
@@ -124,7 +122,6 @@ const Hero = () => {
               variant="ghost"
               size="icon"
               className="hover-lift hover:text-primary transition-bounce"
-              aria-label="Send me an email"
             >
               <Mail className="h-5 w-5" />
             </Button>
@@ -138,7 +135,6 @@ const Hero = () => {
             size="icon"
             onClick={scrollToAbout}
             className="rounded-full"
-            aria-label="Scroll down to about section"
           >
             <ChevronDown className="h-6 w-6" />
           </Button>
