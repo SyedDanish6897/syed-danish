@@ -134,6 +134,33 @@ All colors MUST be HSL.
     background: var(--gradient-primary);
   }
 
+  /* Ensure gradient text works properly */
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .text-transparent {
+    color: transparent;
+  }
+
+  /* Fallback for gradient text */
+  .bg-gradient-primary.bg-clip-text.text-transparent {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  /* Fallback for browsers that don't support background-clip: text */
+  @supports not (background-clip: text) or not (-webkit-background-clip: text) {
+    .bg-gradient-primary.bg-clip-text.text-transparent {
+      background: none;
+      color: hsl(var(--primary));
+    }
+  }
+
   .bg-gradient-card {
     background: var(--gradient-card);
   }

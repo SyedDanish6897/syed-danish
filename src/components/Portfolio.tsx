@@ -52,9 +52,9 @@ const Portfolio = () => {
       <footer className="py-8 border-t border-border bg-muted/30">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © 2024 Syed Danish. Built with{' '}
-            <span className="text-primary">React</span> and{' '}
-            <span className="text-primary">TypeScript</span>.
+            <strong>Copyright : </strong>
+            <span>© </span>
+            <strong>2025 Syed Danish. All Rights Reserved</strong>
           </p>
         </div>
       </footer>
