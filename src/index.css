@@ -227,4 +227,14 @@ All colors MUST be HSL.
     opacity: 1;
     transform: translateX(0);
   }
+
+  /* Fix touch target size for Lovable badge close button */
+  #lovable-badge-close {
+    min-width: 24px !important;
+    min-height: 24px !important;
+    padding: 2px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
 }

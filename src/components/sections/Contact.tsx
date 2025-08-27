@@ -150,6 +150,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`w-10 h-10 bg-gradient-card rounded-full flex items-center justify-center hover-lift transition-smooth ${social.color}`}
+                      aria-label={social.title === 'Email' ? 'Send me an email' : `Visit my ${social.title} profile`}
                     >
                       <social.icon className="h-5 w-5" />
                     </a>
