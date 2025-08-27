@@ -81,6 +81,7 @@ const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
               size="icon"
               onClick={toggleTheme}
               className="transition-bounce hover:scale-110"
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             >
               {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
@@ -91,6 +92,7 @@ const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
               size="icon"
               className="md:hidden"
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>

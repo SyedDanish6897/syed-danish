@@ -108,6 +108,7 @@ const Hero = () => {
               variant="ghost"
               size="icon"
               className="hover-lift hover:text-primary transition-bounce"
+              aria-label="Visit my GitHub profile"
             >
               <Github className="h-5 w-5" />
             </Button>
@@ -115,6 +116,7 @@ const Hero = () => {
               variant="ghost"
               size="icon"
               className="hover-lift hover:text-primary transition-bounce"
+              aria-label="Visit my LinkedIn profile"
             >
               <Linkedin className="h-5 w-5" />
             </Button>
@@ -122,6 +124,7 @@ const Hero = () => {
               variant="ghost"
               size="icon"
               className="hover-lift hover:text-primary transition-bounce"
+              aria-label="Send me an email"
             >
               <Mail className="h-5 w-5" />
             </Button>
@@ -135,6 +138,7 @@ const Hero = () => {
             size="icon"
             onClick={scrollToAbout}
             className="rounded-full"
+            aria-label="Scroll down to about section"
           >
             <ChevronDown className="h-6 w-6" />
           </Button>
