@@ -49,18 +49,20 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto space-y-8 fade-in visible">
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className="mx-auto w-32 h-32 rounded-full bg-gradient-primary p-1 shadow-glow hover-lift">
-            <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-4xl font-bold text-primary">
-              SD
-            </div>
+            <img
+              src="https://res.cloudinary.com/dwcyjebla/image/upload/v1756287286/Home_Danish-removebg-preview_1_ltdbfm.png"
+              alt="Syed Danish"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
 
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
               Hi, I'm{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-primary bg-clip-text text-transparent font-bold">
                 Syed Danish
               </span>
             </h1>
@@ -84,13 +86,15 @@ const Hero = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-gradient-primary hover:shadow-glow transition-bounce hover:scale-105"
+            <a
+              href="https://drive.google.com/file/d/1JRhZmmOOCWpqR9x3hgB1HQ1nUf8BUUlz/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-gradient-primary hover:shadow-glow transition-bounce hover:scale-105 rounded-lg cursor-pointer"
             >
               <Download className="mr-2 h-4 w-4" />
               Download CV
-            </Button>
+            </a>
             
             <Button 
               variant="outline" 
@@ -102,34 +106,36 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Social Links */}
-          <div className="flex justify-center space-x-6 pt-8">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="hover-lift hover:text-primary transition-bounce"
-              aria-label="Visit my GitHub profile"
-            >
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="hover-lift hover:text-primary transition-bounce"
-              aria-label="Visit my LinkedIn profile"
-            >
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="hover-lift hover:text-primary transition-bounce"
-              aria-label="Send me an email"
-            >
-              <Mail className="h-5 w-5" />
-            </Button>
-          </div>
-        </div>
+       {/* Social Links */}
+<div className="flex justify-center space-x-6 pt-8">
+  <a
+    href="https://github.com/SyedDanish6897?tab=repositories"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
+    aria-label="Visit my GitHub profile"
+  >
+    <Github className="h-5 w-5" />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/syed-danish-9a9298233/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
+    aria-label="Visit my LinkedIn profile"
+  >
+    <Linkedin className="h-5 w-5" />
+  </a>
+
+  <a
+    href="mailto:syeddanish6897@gmail.com"
+    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
+    aria-label="Send me an email"
+  >
+    <Mail className="h-5 w-5" />
+  </a>
+</div>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

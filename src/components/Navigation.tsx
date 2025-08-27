@@ -49,10 +49,14 @@ const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border transition-smooth">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="text-2xl font-bold text-primary">
-            SD
-          </div>
+     {/* Logo */}
+<a
+  href="https://syed-danish.lovable.app/"
+  className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent cursor-pointer flex items-center justify-center min-w-[3rem] h-12"
+>
+  SD
+</a>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
