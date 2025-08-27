@@ -178,14 +178,15 @@ const Projects = () => {
             <p className="text-muted-foreground mb-4">
               Want to see more of my work?
             </p>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="hover-lift border-primary/30 hover:bg-primary/10"
+            <a
+              href="https://github.com/SyedDanish6897?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground h-11 px-8 hover-lift border-primary/30 hover:bg-primary/10 rounded-lg cursor-pointer"
             >
               <Github className="mr-2 h-5 w-5" />
               View All Projects on GitHub
-            </Button>
+            </a>
           </div>
         </div>
       </div>
