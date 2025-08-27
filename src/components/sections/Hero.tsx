@@ -106,27 +106,28 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 pt-8">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="hover-lift hover:text-primary transition-bounce"
+            <a
+              href="https://github.com/SyedDanish6897?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
             >
               <Github className="h-5 w-5" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="hover-lift hover:text-primary transition-bounce"
+            </a>
+            <a
+              href="https://www.linkedin.com/in/syed-danish-9a9298233/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
             >
               <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="hover-lift hover:text-primary transition-bounce"
+            </a>
+            <a
+              href="mailto:syeddanish6897@gmail.com"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-smooth focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground w-10 h-10 hover-lift hover:text-primary transition-bounce rounded-md cursor-pointer"
             >
               <Mail className="h-5 w-5" />
-            </Button>
+            </a>
           </div>
         </div>
 
